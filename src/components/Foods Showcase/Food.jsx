@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useFetch from '../../hooks/useFetch';
 import FoodItem from './FoodItem';
-import Skeleton from './Skeleton';
 
 const Foods = () => {
     const [menuTab, setMenuTab] = useState('Breakfast')
