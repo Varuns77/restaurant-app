@@ -27,14 +27,14 @@ body::-webkit-scrollbar-thumb {
 } */
 
 .header-banner {
-  background-image: url('../assets/bannerbackground.png');
+  background-image: url('../assets/117732.jpg');
   height: 600px !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .banner {
-  background-image: url('../assets/bannerbackground.png');
+  background-image: url('../assets/117732.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
