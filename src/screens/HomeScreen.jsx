@@ -3,6 +3,7 @@ import React from "react";
 import Foods from "../components/Foods Showcase/Food";
 import Filter from "../components/Filter/Filter";
 import Banner from "../components/Header/Banner";
+import Footer from "../components/Footer/Footer";
 
 const HomeScreen = () => {
   return (
@@ -13,6 +14,7 @@ const HomeScreen = () => {
         <Foods />
       </div>
       {/* <AboutUs /> */}
+      <Footer />
     </>
   );
 };
