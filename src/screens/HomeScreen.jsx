@@ -2,7 +2,7 @@ import React from "react";
 // import AboutUs from '../components/About/AboutUs';
 import Foods from "../components/Foods Showcase/Food";
 import Filter from "../components/Filter/Filter";
-import Banner from "../Header/Banner";
+import Banner from "../components/Header/Banner";
 
 const HomeScreen = () => {
   return (
