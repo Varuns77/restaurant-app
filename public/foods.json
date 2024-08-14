@@ -5,7 +5,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 8.99,
     "image": "./assets/Breakfast/breakfast1.png",
-    "type": "Breakfast"
+    "type": "Breakfast",
+    "preference-type": "veg"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 9.99,
     "image": "./assets/Breakfast/breakfast2.png",
-    "type": "Breakfast"
+    "type": "Breakfast",
+    "preference-type": "veg"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 10.99,
     "image": "./assets/Breakfast/breakfast3.png",
-    "type": "Breakfast"
+    "type": "Breakfast",
+    "preference-type": "non-veg"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 23.99,
     "image": "./assets/Breakfast/breakfast4.png",
-    "type": "Breakfast"
+    "type": "Breakfast",
+    "preference-type": "veg"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 3.99,
     "image": "./assets/Breakfast/breakfast5.png",
-    "type": "Breakfast"
+    "type": "Breakfast",
+    "preference-type": "non-veg"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 19.99,
     "image": "./assets/Breakfast/breakfast6.png",
-    "type": "Breakfast"
+    "type": "Breakfast",
+    "preference-type": "non-veg"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 15.99,
     "image": "./assets/lunch/lunch1.png",
-    "type": "Lunch"
+    "type": "Lunch",
+    "preference-type": "veg"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 7.99,
     "image": "./assets/lunch/lunch2.png",
-    "type": "Lunch"
+    "type": "Lunch",
+    "preference-type": "non-veg"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 7.99,
     "image": "./assets/lunch/lunch3.png",
-    "type": "Lunch"
+    "type": "Lunch",
+    "preference-type": "non-veg"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 8.99,
     "image": "./assets/lunch/lunch4.png",
-    "type": "Lunch"
+    "type": "Lunch",
+    "preference-type": "veg"
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 13.99,
     "image": "./assets/lunch/lunch5.png",
-    "type": "Lunch"
+    "type": "Lunch",
+    "preference-type": "veg"
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 83.99,
     "image": "./assets/lunch/lunch6.png",
-    "type": "Lunch"
+    "type": "Lunch",
+    "preference-type": "non-veg"
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 66.99,
     "image": "./assets/Dinner/dinner1.png",
-    "type": "Dinner"
+    "type": "Dinner",
+    "preference-type": "non-veg"
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 56.99,
     "image": "./assets/Dinner/dinner2.png",
-    "type": "Dinner"
+    "type": "Dinner",
+    "preference-type": "veg"
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 3.99,
     "image": "./assets/Dinner/dinner3.png",
-    "type": "Dinner"
+    "type": "Dinner",
+    "preference-type": "veg"
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 23.99,
     "image": "./assets/Dinner/dinner4.png",
-    "type": "Dinner"
+    "type": "Dinner",
+    "preference-type": "non-veg"
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 12.99,
     "image": "./assets/Dinner/dinner5.png",
-    "type": "Dinner"
+    "type": "Dinner",
+    "preference-type": "veg"
   },
   {
     "id": 18,
@@ -141,6 +158,7 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 9.99,
     "image": "./assets/Dinner/dinner6.png",
-    "type": "Dinner"
+    "type": "Dinner",
+    "preference-type": "non-veg"
   }
 ]
