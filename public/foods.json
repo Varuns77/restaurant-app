@@ -6,7 +6,8 @@
     "price": 8.99,
     "image": "./assets/Breakfast/breakfast1.png",
     "type": "Breakfast",
-    "preference-type": "veg"
+    "preferencetype": "veg",
+    "cuisinetype": "Italian"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "price": 9.99,
     "image": "./assets/Breakfast/breakfast2.png",
     "type": "Breakfast",
-    "preference-type": "veg"
+    "preferencetype": "veg",
+    "cuisinetype": "Indian"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "price": 10.99,
     "image": "./assets/Breakfast/breakfast3.png",
     "type": "Breakfast",
-    "preference-type": "non-veg"
+    "preferencetype": "non-veg",
+    "cuisinetype": "American"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "price": 23.99,
     "image": "./assets/Breakfast/breakfast4.png",
     "type": "Breakfast",
-    "preference-type": "veg"
+    "preferencetype": "veg",
+    "cuisinetype": "French"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "price": 3.99,
     "image": "./assets/Breakfast/breakfast5.png",
     "type": "Breakfast",
-    "preference-type": "non-veg"
+    "preferencetype": "non-veg",
+    "cuisinetype": "Greek"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "price": 19.99,
     "image": "./assets/Breakfast/breakfast6.png",
     "type": "Breakfast",
-    "preference-type": "non-veg"
+    "preferencetype": "non-veg",
+    "cuisinetype": "French"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "price": 15.99,
     "image": "./assets/lunch/lunch1.png",
     "type": "Lunch",
-    "preference-type": "veg"
+    "preferencetype": "non-veg",
+    "cuisinetype": "Spanish"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "price": 7.99,
     "image": "./assets/lunch/lunch2.png",
     "type": "Lunch",
-    "preference-type": "non-veg"
+    "preferencetype": "veg",
+    "cuisinetype": "French"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "price": 7.99,
     "image": "./assets/lunch/lunch3.png",
     "type": "Lunch",
-    "preference-type": "non-veg"
+    "preferencetype": "non-veg",
+    "cuisinetype": "Greek"
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "price": 8.99,
     "image": "./assets/lunch/lunch4.png",
     "type": "Lunch",
-    "preference-type": "veg"
+    "preferencetype": "veg",
+    "cuisinetype": "Indian"
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "price": 13.99,
     "image": "./assets/lunch/lunch5.png",
     "type": "Lunch",
-    "preference-type": "veg"
+    "preferencetype": "veg",
+    "cuisinetype": "Mexican"
   },
   {
     "id": 12,
@@ -105,7 +116,8 @@
     "price": 83.99,
     "image": "./assets/lunch/lunch6.png",
     "type": "Lunch",
-    "preference-type": "non-veg"
+    "preferencetype": "non-veg",
+    "cuisinetype": "Indian"
   },
   {
     "id": 13,
@@ -114,7 +126,8 @@
     "price": 66.99,
     "image": "./assets/Dinner/dinner1.png",
     "type": "Dinner",
-    "preference-type": "non-veg"
+    "preferencetype": "non-veg",
+    "cuisinetype": "Italian"
   },
   {
     "id": 14,
@@ -123,7 +136,8 @@
     "price": 56.99,
     "image": "./assets/Dinner/dinner2.png",
     "type": "Dinner",
-    "preference-type": "veg"
+    "preferencetype": "veg",
+    "cuisinetype": "Mexican"
   },
   {
     "id": 15,
@@ -132,16 +146,18 @@
     "price": 3.99,
     "image": "./assets/Dinner/dinner3.png",
     "type": "Dinner",
-    "preference-type": "veg"
+    "preferencetype": "veg",
+    "cuisinetype": "Italian"
   },
   {
     "id": 16,
-    "title": "French Fried with Cheese",
+    "title": "French Fries with Cheese",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 23.99,
     "image": "./assets/Dinner/dinner4.png",
     "type": "Dinner",
-    "preference-type": "non-veg"
+    "preferencetype": "non-veg",
+    "cuisinetype": "French"
   },
   {
     "id": 17,
@@ -150,7 +166,8 @@
     "price": 12.99,
     "image": "./assets/Dinner/dinner5.png",
     "type": "Dinner",
-    "preference-type": "veg"
+    "preferencetype": "veg",
+    "cuisinetype": "Italian"
   },
   {
     "id": 18,
@@ -159,6 +176,7 @@
     "price": 9.99,
     "image": "./assets/Dinner/dinner6.png",
     "type": "Dinner",
-    "preference-type": "non-veg"
+    "preferencetype": "non-veg",
+    "cuisinetype": "American"
   }
 ]
