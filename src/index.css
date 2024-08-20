@@ -43,13 +43,13 @@ body::-webkit-scrollbar-thumb {
   font-family: 'Poppins', sans-serif;
 }
 .bg-primary {
-  background: #f91944;
+  background: #655DBB;
 }
 .bg-primary-dark {
   background: #ce193c;
 }
 .text-primary {
-  color: #f91944;
+  color: black;
 }
 
 /* Glassmorphism card effect */
