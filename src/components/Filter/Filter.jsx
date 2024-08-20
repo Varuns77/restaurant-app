@@ -1,9 +1,7 @@
-import React, { useContext } from "react";
-
 function Filter() {
   return (
-    <div>
-      <div className="max-w-full mx-auto px-4 mt-14 ">
+    <div className="w-[450px] md:max-w-[400px] md:bg-red-500">
+      <div className="mx-auto px-4 mt-14 ">
         <div className="p-5 rounded-lg bg-gray-100 drop-shadow-xl border border-gray-200">
           <div className="relative">
             <div className="absolute flex items-center ml-2 h-full">
@@ -26,14 +24,10 @@ function Filter() {
               className="px-8 py-3 w-full rounded-md bg-violet-0 border-transparent outline-0 text-sm"
             />
           </div>
-          <div className="flex items-center justify-between mt-4">
+          <div>
             <p className="font-medium">Filters</p>
-            <button className="px-4 py-2 bg-gray-50hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-md">
-              Reset Filter
-            </button>
           </div>
           <div>
-
             {/* Filter options */}
             <div className="mt-4">
               <div className="mb-3">
@@ -48,7 +42,7 @@ function Filter() {
                 <label>Meal Type:</label>
                 <select
                   // value={filterPrice}
-                // onChange={(e) => setFilterPrice(e.target.value)}
+                  // onChange={(e) => setFilterPrice(e.target.value)}
                   className="px-4 py-3 w-full rounded-md bg-gray-50 border-transparent outline-0 focus:border-gray-500 focus:bg-white focus:ring-0 text-sm"
                 ></select>
               </div>
@@ -62,7 +56,14 @@ function Filter() {
               </div>
             </div>
           </div>
-          <button className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full mt-7 transform transition duration-300 hover:scale-105">Apply</button>
+          <div className="flex justify-around">
+            <button className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full mt-7 transform transition duration-300 hover:scale-105">
+              Apply
+            </button>
+            <button className="bg-blue-100 border border-blue-500 px-8 py-2 focus:outline-none poppins rounded-full mt-7 transform transition duration-300 hover:scale-105">
+              Reset
+            </button>
+          </div>
         </div>
       </div>
     </div>
