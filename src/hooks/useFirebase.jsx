@@ -76,37 +76,71 @@ const useFirebase = () => {
     }
 
     //sign in functionality
-    const signInUser = (email, password) => {
-        signInWithEmailAndPassword(auth, email , password)
-        .then(res => {
+    // const signInUser = (email, password) => {
+    //     signInWithEmailAndPassword(auth, email , password)
+    //     .then(res => {
+    //         setUser(res.user);
+    //         swal("Sign in Successful!", "Welcome back !", "info")
+    //         history.push('/');
+    //     })
+    //         .catch(err => swal("Something went wrong!", `${err.message}`, "error"))
+    // }
+
+    const signInUser = async (email, password) => {
+        try {
+            const res = await signInWithEmailAndPassword(auth, email, password);
             setUser(res.user);
-            swal("Sign in Successful!", "Welcome back !", "info")
+            swal("Sign in Successful!", "Welcome back!", "info");
             history.push('/');
-        })
-            .catch(err => swal("Something went wrong!", `${err.message}`, "error"))
+        } catch (err) {
+            swal("Something went wrong!", `${err.message}`, "error");
+        }
     }
 
 
     //google sign in 
-    const signInWithGoogle = () => {
-        const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-        .then(res => {
+    // const signInWithGoogle = () => {
+    //     const googleProvider = new GoogleAuthProvider();
+    //     signInWithPopup(auth, googleProvider)
+    //     .then(res => {
+    //         setUser(res.user);
+    //         swal("Good job!", "Account has been created!", "success");
+    //         history.push('/');
+    //     }).catch(err => console.log(err.message))
+    // }
+
+    const signInWithGoogle = async () => {
+        try {
+            const googleProvider = new GoogleAuthProvider();
+            const res = await signInWithPopup(auth, googleProvider);
             setUser(res.user);
             swal("Good job!", "Account has been created!", "success");
             history.push('/');
-        }).catch(err => console.log(err.message))
+        } catch (err) {
+            console.log(err.message);
+        }
     }
 
     // sign out 
-    const signOutUser = () => {
-        signOut(auth).then(() => {
+    // const signOutUser = () => {
+    //     signOut(auth).then(() => {
+    //         setUser({});
+    //         swal("Logout Successful!", "You are logged out!", "success");
+    //         history.push('/signin')
+    //     }).catch((err) => {
+    //         swal("Something went wrong!", `${err.message}`, "error")
+    //     });
+    // }
+
+    const signOutUser = async () => {
+        try {
+            await signOut(auth);
             setUser({});
             swal("Logout Successful!", "You are logged out!", "success");
-            history.push('/signin')
-        }).catch((err) => {
-            swal("Something went wrong!", `${err.message}`, "error")
-        });
+            history.push('/signin');
+        } catch (err) {
+            swal("Something went wrong!", `${err.message}`, "error");
+        }
     }
 
     return {
