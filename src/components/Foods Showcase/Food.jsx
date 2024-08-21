@@ -54,49 +54,47 @@ const Foods = () => {
   };
 
   return (
-    <section className="my-12 max-w-screen-xl mx-auto px-6">
+    <section className="flex justify-between mr-8">
       <div className="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col">
         <div>
           {/* Include the Filter component */}
           <Filter onApplyFilters={handleApplyFilters} />
         </div>
         {/* Food Menu Tabs */}
-        <div>
-      <div className="flex items-center justify-center space-x-6 mt-6">
-        <p
-          className={
-            menuTab === "veg"
-              ? "active_menu_tab poppins bg-primary"
-              : "menu_tab poppins"
-          }
-          onClick={() => handleMenuTabs("veg")}
-        >
-          Veg
-        </p>
-        <p
-          className={
-            menuTab === "non-veg"
-              ? "active_menu_tab poppins bg-primary"
-              : "menu_tab poppins"
-          }
-          onClick={() => handleMenuTabs("non-veg")}
-        >
-          Non Veg
-        </p>
-      </div>
+        <div className="flex flex-col w-full">
+          <div className="flex items-center justify-center space-x-6 mt-12">
+            <p
+              className={
+                menuTab === "veg"
+                  ? "active_menu_tab poppins bg-primary"
+                  : "menu_tab poppins"
+              }
+              onClick={() => handleMenuTabs("veg")}
+            >
+              Veg
+            </p>
+            <p
+              className={
+                menuTab === "non-veg"
+                  ? "active_menu_tab poppins bg-primary"
+                  : "menu_tab poppins"
+              }
+              onClick={() => handleMenuTabs("non-veg")}
+            >
+              Non Veg
+            </p>
+          </div>
 
-      {/* All Foods */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
-        {loading
-          ? [...Array(6)].map((_, index) => <Skeleton key={index} />)
-          : filteredFoods
-              .filter((item) => menuTab === item.preferencetype)
-              .map((item) => <FoodItem key={item.id} {...item} />)}
+          {/* All Foods */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+            {loading
+              ? [...Array(6)].map((_, index) => <Skeleton key={index} />)
+              : filteredFoods
+                  .filter((item) => menuTab === item.preferencetype)
+                  .map((item) => <FoodItem key={item.id} {...item} />)}
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-
-    
     </section>
   );
 };
