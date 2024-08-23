@@ -10,7 +10,7 @@ import { clearCart } from "../Redux/AddToCart/cartSlice";
 // } from "../../redux/features/cartSlice";
 
 // import Button from "../Button";
-// import CartItem from "./CartItem";
+import CartItem from "./CartItem";
 import EmptyCart from "./EmptyCart";
 // import { useNavigate } from "react-router-dom";
 
@@ -50,7 +50,7 @@ function Cart({ showCart, setShowCart }) {
           <div className="mt-[10px] flex flex-col gap-[10px] overflow-y-auto">
             {cartItems?.length > 0 ? (
               cartItems?.map((item) => {
-                // return <CartItem item={item} key={item.image} />;
+                return <CartItem item={item} key={item.image} />;
               })
             ) : (
               <EmptyCart />
