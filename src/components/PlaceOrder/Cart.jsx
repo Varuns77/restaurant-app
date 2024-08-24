@@ -12,11 +12,13 @@ import { clearCart } from "../Redux/AddToCart/cartSlice";
 // import Button from "../Button";
 import CartItem from "./CartItem";
 import EmptyCart from "./EmptyCart";
+import { useHistory } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
 function Cart({ showCart, setShowCart }) {
   //   const dispatch = useDispatch();
   //   const navigate = useNavigate();
+  const history = useHistory();
 
   const cartItems = useSelector((state) => {
     console.log(state);
@@ -29,6 +31,12 @@ function Cart({ showCart, setShowCart }) {
 
   //   const cartItems = useSelector(getCart);
   //   const totalPrice = useSelector(getTotalCartPrise);
+
+  const handleOrder = () => {
+    console.log("Order has been added");
+    history.push("/orders");
+    setShowCart(false);
+  }
 
   return (
     <>
@@ -78,7 +86,7 @@ function Cart({ showCart, setShowCart }) {
               <button
                 
                 className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full transform transition duration-300 hover:scale-105"
-              >
+              onClick={handleOrder}>
                 Order Now
               </button>
               <button
