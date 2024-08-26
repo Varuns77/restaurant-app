@@ -27,14 +27,15 @@ body::-webkit-scrollbar-thumb {
 } */
 
 .header-banner {
-  background-image: url('../assets/117732.jpg');
-  height: 600px !important;
+  background-image: url('../assets/2147740755.jpg');
+  height: 700px !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
 }
 .banner {
-  background-image: url('../assets/117732.jpg');
+  background-image: url('../assets/2147740755.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

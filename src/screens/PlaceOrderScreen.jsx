@@ -1,14 +1,13 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Updated import
 import swal from "sweetalert";
 import DeliveryForm from "../components/PlaceOrder/DeliveryForm";
 import OrderCard from "../components/PlaceOrder/OrderCard";
 import OrderPrice from "../components/PlaceOrder/OrderPrice";
 import { useDelivery } from "../contexts/DeliveryProvider";
-// import { useOrder } from '../contexts/OrderProvider';
 import Back from "../routes/Back";
 import { useSelector, useDispatch } from "react-redux";
-import {clearCart } from "../components/Redux/AddToCart/cartSlice"; // Import the action to clear orders
+import { clearCart } from "../components/Redux/AddToCart/cartSlice"; // Import the action to clear orders
 import { db } from "../config/firebase";
 import { updateDoc, doc, arrayUnion } from "firebase/firestore"; // Import Firestore functions
 import { getAuth } from "firebase/auth"; // Import Firebase auth to get current user
@@ -18,7 +17,7 @@ const PlaceOrderScreen = () => {
   const totalAmount = useSelector((state) => state.cart?.totalAmount);
   const { input, disabled } = useDelivery();
   const dispatch = useDispatch();
-  const history = useHistory();
+  const navigate = useNavigate(); // Updated hook from useHistory to useNavigate
   const auth = getAuth();
   const currentUser = auth.currentUser;
 
@@ -74,17 +73,8 @@ const PlaceOrderScreen = () => {
               {/* right side  */}
               <div className="col-span-1">
                 <div className="glass p-6 box-border rounded-lg">
-                  {/* order details 
-                                    <div className="flex flex-col space-y-4 mb-3">
-                                        <p className="poppins text-gray-700">Deliver Place :  <span className="font-semibold text-black">{input.country ? `${input.country}` : '-----'}</span></p>
-                                        <p className="poppins text-gsray-700">Ariving in 20-30 min</p>
-                                        <p className="poppins text-gray-700">Road <span className="font-semibold text-black">{input.roadNo ? `${input.roadNo}` : '-----'}</span> </p>
-                                        <p className="poppins text-gray-700">Floor :  <span className="font-semibold text-black">{input.flatno ? `${input.flatno}` : '-----'}</span> </p>
-                                        <p className="poppins text-gray-700">Deliver to :  <span className="font-semibold text-black">{input.name ? `${input.name}` : '-----'}</span> </p>
-                                    </div> */}
                   {/* orders  */}
-
-                  <div className=" flex flex-col space-y-3 h-64 overflow-y-scroll orderContainer ">
+                  <div className="flex flex-col space-y-3 h-64 overflow-y-scroll orderContainer ">
                     {order.map((item) => (
                       <OrderCard key={item.id} {...item} />
                     ))}
@@ -115,7 +105,7 @@ const PlaceOrderScreen = () => {
                           );
 
                           // Redirect to order success page
-                          history.push("/order-successful");
+                          navigate("/order-successful"); // Updated to use navigate
 
                           // Clear the cart using Redux action
                           dispatch(clearCart());
