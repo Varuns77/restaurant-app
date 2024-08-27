@@ -39,10 +39,10 @@ const Navbar = () => {
                 </div>
 
                 {/* Middle */}
-                <div className="flex gap-2">
+                {/* <div className="flex gap-2">
                     <p>Home</p>
                     <p onClick={() => navigate('/orderedItems')}>Order</p>
-                </div>
+                </div> */}
 
                 {/* Right  */}
                 {user?.displayName ? (
