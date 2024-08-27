@@ -178,5 +178,66 @@
     "type": "Dinner",
     "preferencetype": "non-veg",
     "cuisinetype": "American"
+  },
+  {
+    "id": 19,
+    "title": "Coke",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 4.99,
+    "image": "./assets/Beverages/Coke.png",
+    "type": "Beverage",
+    "preferencetype": "Drink",
+    "cuisinetype": "Beverage"
+  },
+  {
+    "id": 20,
+    "title": "Lemon Soda",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 4.99,
+    "image": "./assets/Beverages/LemonSoda.png",
+    "type": "Beverage",
+    "preferencetype": "Drink",
+    "cuisinetype": "Beverage"
+  },
+  {
+    "id": 21,
+    "title": "Orange Juice",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 6.99,
+    "image": "./assets/Beverages/OrangeJuice.png",
+    "type": "Beverage",
+    "preferencetype": "Drink",
+    "cuisinetype": "Beverage"
+  },
+  {
+    "id": 22,
+    "title": "Strawberry Juice",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 6.99,
+    "image": "./assets/Beverages/StrawberryJuice.png",
+    "type": "Beverage",
+    "preferencetype": "Drink",
+    "cuisinetype": "Beverage"
+  },
+  {
+    "id": 23,
+    "title": "Cranberry Juice",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 6.99,
+    "image": "./assets/Beverages/StrawberryJuice.png",
+    "type": "Beverage",
+    "preferencetype": "Drink",
+    "cuisinetype": "Beverage"
+  },
+  {
+    "id": 23,
+    "title": "Hot Coffee",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 4.99,
+    "image": "./assets/Beverages/HotCoffee.png",
+    "type": "Beverage",
+    "preferencetype": "Drink",
+    "cuisinetype": "Beverage"
   }
 ]
+
