@@ -14,13 +14,11 @@ import useFetch from "../../hooks/useFetch";
 
 const Menu = () => {
 
-    const [menuTab, setMenuTab] = useState("veg");
+  const [cuisineType, setCuisineType] = useState("All"); // New state for cuisine type
 
-    const [foods] = useFetch();
-  
-    const handleMenuTabs = (type) => {
-      setMenuTab(type);
-    };
+  const handleCuisineType = (type) => {
+    setCuisineType(type);
+  };
 
   return (
     <>
@@ -77,63 +75,53 @@ const Menu = () => {
         >
           {/* Breakfast Slide */}
           <SwiperSlide>
-            <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-8 text-center">
+            <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-4 text-center">
               Breakfast
             </h3>
-            <div className="flex items-center justify-center space-x-6">
-            <p
-              className={
-                menuTab === "veg"
-                  ? "active_menu_tab poppins bg-primary"
-                  : "menu_tab poppins border-l-purple-400"
-              }
-              onClick={() => handleMenuTabs("veg")}
-            >
-              Veg
-            </p>
-            <p
-              className={
-                menuTab === "non-veg"
-                  ? "active_menu_tab poppins bg-primary"
-                  : "menu_tab poppins"
-              }
-              onClick={() => handleMenuTabs("non-veg")}
-            >
-              Non Veg
-            </p>
-            <p
-            >
-              Drinks
-            </p>
-          </div>
+            <div className="flex items-center justify-center space-x-6 mb-4">
+              <MenuCategory
+                selectedCuisine={cuisineType}
+                onCuisineSelect={handleCuisineType}
+              />
+            </div>
             <div className="box-container flex flex-wrap gap-8 pb-16">
-              <MenuItem mealType="Breakfast" />
+              <MenuItem mealType="Breakfast" cuisineType={cuisineType} />
             </div>
           </SwiperSlide>
 
           {/* Lunch Slide */}
           <SwiperSlide className="swiper-slide slide">
-            <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-12 text-center">
-              lunch
+            <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-4 text-center">
+              Lunch
             </h3>
+            <div className="flex items-center justify-center space-x-6 mb-4">
+              <MenuCategory
+                selectedCuisine={cuisineType}
+                onCuisineSelect={handleCuisineType}
+              />
+            </div>
             <div className="box-container flex flex-wrap gap-8 pb-16">
-              {/* {[...Array(6)].map((_, index) => ( */}
-              <div
-                // key={index}
-                className="box flex items-center justify-between bg-white p-8 shadow-lg border border-gray-300 flex-1 min-w-[41rem] transition-transform duration-300 hover:scale-95 cursor-pointer"
-              >
-                <div className="info">
-                  <h3 className="text-2xl text-black pb-2">lunch</h3>
-                  <p className="text-base text-gray-600 leading-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestias, voluptatibus!
-                  </p>
-                </div>
-                <div className="price text-2xl text-[#cd9452]">$59.99</div>
-              </div>
-              {/* ))} */}
+              <MenuItem mealType="Lunch" cuisineType={cuisineType} />
             </div>
           </SwiperSlide>
+
+          {/* Dinner Slide */}
+          <SwiperSlide className="swiper-slide slide">
+            <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-4 text-center">
+              Dinner
+            </h3>
+            <div className="flex items-center justify-center space-x-6 mb-4">
+              <MenuCategory
+                selectedCuisine={cuisineType}
+                onCuisineSelect={handleCuisineType}
+              />
+            </div>
+            <div className="box-container flex flex-wrap gap-8 pb-16">
+              <MenuItem mealType="Dinner" cuisineType={cuisineType} />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        <Drinks drinkType="Beverage"/>
 
           {/* Dinner Slide */}
           {/* <SwiperSlide className="swiper-slide slide">
@@ -188,7 +176,6 @@ const Menu = () => {
             ))}
           </div>
         </SwiperSlide> */}
-        </Swiper>
       </section>
     </>
   )
