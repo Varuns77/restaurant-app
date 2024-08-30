@@ -13,7 +13,6 @@ import MenuItem from "../Menu/menuItem";
 import useFetch from "../../hooks/useFetch";
 
 const Menu = () => {
-
   const [cuisineType, setCuisineType] = useState("All"); // New state for cuisine type
 
   const handleCuisineType = (type) => {
@@ -121,10 +120,10 @@ const Menu = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <Drinks drinkType="Beverage"/>
+        <Drinks drinkType="Beverage" />
 
-          {/* Dinner Slide */}
-          {/* <SwiperSlide className="swiper-slide slide">
+        {/* Dinner Slide */}
+        {/* <SwiperSlide className="swiper-slide slide">
           <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-12 text-center">dinner</h3>
           <div className="box-container flex flex-wrap gap-8 pb-16">
             {[...Array(6)].map((_, index) => (
@@ -141,8 +140,8 @@ const Menu = () => {
           </div>
         </SwiperSlide> */}
 
-          {/* Drinks Slide */}
-          {/* <SwiperSlide className="swiper-slide slide">
+        {/* Drinks Slide */}
+        {/* <SwiperSlide className="swiper-slide slide">
           <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-12 text-center">drinks</h3>
           <div className="box-container flex flex-wrap gap-8 pb-16">
             {[...Array(6)].map((_, index) => (
@@ -159,8 +158,8 @@ const Menu = () => {
           </div>
         </SwiperSlide> */}
 
-          {/* Dessert Slide */}
-          {/* <SwiperSlide className="swiper-slide slide">
+        {/* Dessert Slide */}
+        {/* <SwiperSlide className="swiper-slide slide">
           <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-12 text-center">dessert</h3>
           <div className="box-container flex flex-wrap gap-8 pb-16">
             {[...Array(6)].map((_, index) => (
@@ -178,7 +177,7 @@ const Menu = () => {
         </SwiperSlide> */}
       </section>
     </>
-  )
-}
+  );
+};
 
 export default Menu;
