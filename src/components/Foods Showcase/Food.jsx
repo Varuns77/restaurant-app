@@ -3,6 +3,7 @@ import useFetch from "../../hooks/useFetch";
 import FoodItem from "./FoodItem";
 import Skeleton from "./Skeleton";
 import Filter from "../Filter/Filter";
+import { Link } from "react-router-dom";
 
 const Foods = () => {
   const [menuTab, setMenuTab] = useState("veg");
@@ -54,16 +55,15 @@ const Foods = () => {
   };
 
   return (
-    <section className="flex justify-between mr-8">
-      <div className="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col">
-        <div>
-          {/* Include the Filter component */}
+    <section className="flex justify-center items-center mr-8 ">
+      <div className="flex  justify-center xl:flex-row lg:flex-row md:flex-col sm:flex-col">
+        {/* <div>
           <Filter onApplyFilters={handleApplyFilters} />
-        </div>
+        </div> */}
         {/* Food Menu Tabs */}
         <div className="flex flex-col w-full">
           <div className="flex items-center justify-center space-x-6 mt-12">
-            <p
+            {/* <p
               className={
                 menuTab === "veg"
                   ? "active_menu_tab poppins bg-primary"
@@ -83,6 +83,18 @@ const Foods = () => {
             >
               Non Veg
             </p>
+            <p
+              // className={
+              //   menuTab === "non-veg"
+              //     ? "active_menu_tab poppins bg-primary"
+              //     : "menu_tab poppins"
+              // }
+              // onClick={() => handleMenuTabs("non-veg")}
+            >
+              Drinks
+            </p> */}
+
+            <h1 className="text-2xl font-bold">Menu</h1>
           </div>
 
           {/* All Foods */}
@@ -91,7 +103,9 @@ const Foods = () => {
               ? [...Array(6)].map((_, index) => <Skeleton key={index} />)
               : filteredFoods
                   .filter((item) => menuTab === item.preferencetype)
+                  .slice(0, 6)
                   .map((item) => <FoodItem key={item.id} {...item} />)}
+              <Link>Explore All foods</Link>
           </div>
         </div>
       </div>
