@@ -55,8 +55,8 @@ const Menu = () => {
       </Swiper> */}
       {/* </div> */}
       {/* </main> */}
-      <section className="menu py-20 mx-auto px-24 bg-gray-100" id="menu">
-        <div className="heading text-center mb-12">
+      <section className="py-20 mx-auto p-[4.5rem_2rem] lg:p-[4.5rem_5rem] bg-gray-100" >
+        <div className="text-center mb-12">
           <span className="text-2xl text-[#cd9452]">our menu</span>
           <h3 className="text-4xl text-black">our popular dishes</h3>
         </div>
