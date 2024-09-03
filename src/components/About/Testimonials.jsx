@@ -104,7 +104,7 @@ const Testimonials = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <figure className="testimonial text-center">
               <img
-                src="./Final Images/dave.jpg"
+                src="./assets/Testimonial/gamer.png"
                 alt="Dave Bryson"
                 className="w-16 h-16 rounded-full mb-3 mx-auto"
               />
@@ -118,7 +118,7 @@ const Testimonials = () => {
             </figure>
             <figure className="testimonial text-center">
               <img
-                src="./Final Images/steve.jpg"
+                src="./assets/Testimonial/girl.png"
                 alt="Hannah"
                 className="w-16 h-16 rounded-full mb-3 mx-auto"
               />
@@ -132,12 +132,12 @@ const Testimonials = () => {
             </figure>
             <figure className="testimonial text-center">
               <img
-                src="./Final Images/hannah.jpg"
+                src="./assets/Testimonial/woman.png"
                 alt="Dave Bryson"
                 className="w-16 h-16 rounded-full mb-3 mx-auto"
               />
               <blockquote className="testimonial-text text-lg leading-7 mb-4">
-                Omnifood is a life saver! I just started a company, so there's
+                Seven Spoons is a life saver! I just started a company, so there's
                 no time for cooking. I couldn't live without my daily meals now!
               </blockquote>
               <p className="testimonial-name text-base text-gray-500">
@@ -146,12 +146,12 @@ const Testimonials = () => {
             </figure>
             <figure className="testimonial text-center">
               <img
-                src="./Final Images/ben.jpg"
+                src="./assets/Testimonial/man.png"
                 alt="Dave Bryson"
                 className="w-16 h-16 rounded-full mb-3 mx-auto"
               />
               <blockquote className=" text-lg leading-7 mb-4">
-                I got Omnifood for the whole family, and it frees up so much
+                I got Seven Spoons for the whole family, and it frees up so much
                 time! Plus, everything is organic and vegan and without plastic.
               </blockquote>
               <p className="text-base text-gray-500">&mdash; Dave Bryson</p>
