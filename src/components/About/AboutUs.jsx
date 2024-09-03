@@ -62,7 +62,7 @@ const AboutUs = () => {
           <div className="icons-container flex flex-wrap gap-8 mt-12">
             <div className="icons flex-1 min-w-[12rem] text-center bg-gray-100 p-8 rounded">
               <img
-                src="images/about-icon-1.png"
+                 src="./assets/AboutUs/recommended-food.png"
                 alt="Quality Food"
                 className="h-20 mx-auto"
               />
@@ -73,7 +73,7 @@ const AboutUs = () => {
 
             <div className="icons flex-1 min-w-[12rem] text-center bg-gray-100 p-8 rounded">
               <img
-                src="images/about-icon-2.png"
+                src="./assets/AboutUs/cocktail.png"
                 alt="Food & Drinks"
                 className="h-20 mx-auto"
               />
@@ -84,7 +84,7 @@ const AboutUs = () => {
 
             <div className="icons flex-1 min-w-[12rem] text-center bg-gray-100 p-8 rounded">
               <img
-                src="images/about-icon-3.png"
+                src="./assets/AboutUs/chef.png"
                 alt="Expert Chef"
                 className="h-20 mx-auto"
               />
