@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import AboutItem from "./AboutItem";
 // import 'swiper/css';
 // import 'swiper/css/navigation';
 // import 'swiper/css/pagination';
