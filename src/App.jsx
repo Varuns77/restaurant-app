@@ -13,7 +13,7 @@ import OrderSuccessfulScreen from "./screens/OrderSuccessfulScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import SignInScreen from "./screens/SignInScreen";
 import SignUpScreen from "./screens/SignUpScreen";
-import YourOrders from "./components/PlaceOrder/YourOrders";
+import Menu from "./components/Menu/Menu";
 
 const App = () => {
     return (
@@ -31,7 +31,7 @@ const App = () => {
                             <Route element={<PrivateRoute />}>
                                 <Route path="/foods/:title" element={<FoodDetailScreen />} />
                                 <Route path="/orders" element={<PlaceOrderScreen />} />
-                                <Route path="/orderedItems" element={<YourOrders />} />
+                                <Route path="/menu" element={<Menu />} />
                                 <Route path="/order-successful" element={<OrderSuccessfulScreen />} />
                             </Route>
                             <Route path="*" element={<ErrorScreen />} />

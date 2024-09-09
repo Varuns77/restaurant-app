@@ -12,7 +12,7 @@ const ErrorScreen = () => {
                     <img className="w-96 object-contain" src={errorImg} alt="error" />
 
                     <button
-                        className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full mt-24 transform transition duration-300 hover:scale-105"
+                        className="bg-primary text-white px-8 py-2 focus:outline-none forum font-bold rounded-full mt-24 transform transition duration-300 hover:scale-105"
                         onClick={() => navigate('/')} // Updated to use navigate
                     >
                         Go back to home

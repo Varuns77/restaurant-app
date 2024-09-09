@@ -32,16 +32,16 @@ const FoodDetailScreen = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
               {/* Left side */}
               <div className="order-2 md:order-1 lg:order-1 flex flex-col justify-center">
-                <h1 className="text-center md:text-left lg:text-left text-3xl lg:text-4xl font-semibold poppins pb-4 text-gray-700 select-none">
+                <h1 className="text-center md:text-left lg:text-left text-3xl lg:text-4xl font-semibold forum pb-4 text-gray-700 select-none">
                   {food.title}
                 </h1>
-                <p className="text-center md:text-left lg:text-left text-sm poppins text-gray-500 leading-relaxed select-none">
+                <p className="text-center md:text-left lg:text-left text-md text-gray-500 leading-relaxed select-none">
                   {food.description}
                 </p>
 
                 {/* Price and add button */}
                 <div className="pt-8">
-                  <h1 className="text-3xl font-bold text-black poppins select-none">
+                  <h1 className="text-3xl font-bold forum select-none">
                     ${food.price.toFixed(2)}
                   </h1>
                   <div className="mt-8 flex items-center justify-center md:justify-start lg:justify-start">
@@ -49,8 +49,8 @@ const FoodDetailScreen = () => {
                       disabled={isDisabled}
                       className={
                         isDisabled
-                          ? "opacity-30 flex items-center space-x-3 bg-primary px-6 py-3 text-white poppins rounded-full ring-red-300 focus:outline-none focus:ring-4 transform transition duration-700 hover:scale-105"
-                          : "flex items-center space-x-3 bg-primary px-6 py-3 text-white poppins rounded-full ring-red-300 focus:outline-none focus:ring-4 transform transition duration-700 hover:scale-105"
+                          ? "opacity-30 flex items-center space-x-3 bg-primary px-6 py-3 text-white font-bold forum rounded-full focus:outline-none focus:ring-4 transform transition duration-700 hover:scale-105"
+                          : "flex items-center space-x-3 bg-primary px-6 py-3 text-white font-bold forum rounded-full focus:outline-none focus:ring-4 transform transition duration-700 hover:scale-105"
                       }
                       onClick={() => handleAddToCart(food)}
                     >
