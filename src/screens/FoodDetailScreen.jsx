@@ -35,7 +35,7 @@ const FoodDetailScreen = () => {
                 <h1 className="text-center md:text-left lg:text-left text-3xl lg:text-4xl font-semibold forum pb-4 text-gray-700 select-none">
                   {food.title}
                 </h1>
-                <p className="text-center md:text-left lg:text-left text-md text-gray-500 leading-relaxed select-none">
+                <p className="text-center forum md:text-left lg:text-left text-md text-gray-500 leading-relaxed select-none">
                   {food.description}
                 </p>
 

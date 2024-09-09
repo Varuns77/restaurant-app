@@ -42,7 +42,7 @@ const SignInScreen = () => {
                 <Brand />
                 {/* sign up form  */}
                 <form className="bg-white w-96 mt-6 p-4 rounded-lg shadow-lg" onSubmit={handleSubmit}>
-                    <div className="flex flex-col space-y-6">
+                    <div className="flex flex-col space-y-6 forum font-bold">
                         {Inputs.map(input => (
                             <TextField
                                 key={input.id}
@@ -56,7 +56,7 @@ const SignInScreen = () => {
                     </div>
                     <Button text="Sign In" />
                     <Link to="/signup">
-                        <p className="text-base text-primary text-center my-6 hover:underline">Need an account ?</p>
+                        <p className="text-base text-primary forum font-bold text-center my-6 hover:underline">Need an account ?</p>
                     </Link>
 
                     <GoogleSignIn text="Sign In With Google" />

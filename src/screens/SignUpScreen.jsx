@@ -51,7 +51,7 @@ const SignUpScreen = () => {
                 <Brand />
                 {/* sign up form  */}
                 <form className="bg-white w-96 mt-6 p-4 rounded-lg shadow-lg" onSubmit={handleSubmit}>
-                    <div className="flex flex-col space-y-6">
+                    <div className="flex flex-col space-y-6 forum font-bold">
                         {Inputs.map(input => (
                             <TextField
                                 key={input.id}
@@ -65,7 +65,7 @@ const SignUpScreen = () => {
                     </div>
                     <Button text="Sign Up" />
                     <Link to="/signin">
-                        <p className="text-base text-primary text-center my-6 hover:underline">Already have an account ?</p>
+                        <p className="text-base text-primary text-center forum font-bold my-6 hover:underline">Already have an account ?</p>
                     </Link>
 
                     <GoogleSignIn text="Sign Up With Google"/>

@@ -86,13 +86,13 @@ const PlaceOrderScreen = () => {
                     {disabled ? (
                       <button
                         disabled="disabled"
-                        className="w-full px-6 py-3 rounded-lg bg-primary text-white poppins ring-red-300 focus:ring-4 transition duration-500 opacity-40"
+                        className="w-full px-6 py-3 rounded-lg bg-primary text-white forum ring-red-300 focus:ring-4 transition duration-500 opacity-40"
                       >
                         Place Order
                       </button>
                     ) : (
                       <button
-                        className="w-full px-6 py-3 rounded-lg bg-primary text-white poppins ring-red-300 focus:ring-4 transition duration-500"
+                        className="w-full px-6 py-3 rounded-lg bg-primary text-white forum ring-red-300 focus:ring-4 transition duration-500"
                         onClick={async () => {
                           // Save order to Firestore
                           await saveOrderToFirestore(order);
@@ -121,7 +121,7 @@ const PlaceOrderScreen = () => {
           </>
         ) : (
           <div className="pt-24">
-            <h1 className="text-center text-5xl text-primary poppins">
+            <h1 className="text-center text-5xl text-primary forum">
               No Order has added!!
             </h1>
           </div>
