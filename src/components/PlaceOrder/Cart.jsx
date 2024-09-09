@@ -28,11 +28,12 @@ function Cart({ showCart, setShowCart }) {
       <div
         className={`transition-right fixed z-50 duration-300 ease-in-out ${
           showCart ? "right-0" : "right-[-100%]"
-        } top-[60px]
-      h-[calc(100vh-60px)] w-full border-l-[3px] border-t-[3px] border-gray bg-white md:w-[400px]`}
+        } top-[88px]
+      h-[calc(100vh-88px)] w-full border-l-[3px] border-t-[3px] border-gray bg-white md:w-[400px]`}
       >
-        <div className="flex h-[40px] items-center justify-between bg-gray px-[10px] font-bold">
-          <p>Shopping Cart</p>
+        <div className="flex h-[40px] items-center justify-between border-b-2 bg-gray px-[10px] font-bold forum text-lg">
+          <p className="">Shopping Cart</p>
+          {/* <hr className="w-full p-1 flex-col" /> */}
           <MdClose
             className="cursor-pointer text-xl"
             onClick={() => setShowCart(false)}
@@ -51,21 +52,21 @@ function Cart({ showCart, setShowCart }) {
           </div>
 
           <div className="text-center">
-            <div className="mb-[10px] flex items-center justify-between bg-gray p-[10px]">
-              <h5 className="font-bold">Total:</h5>
-              <p>{formatCurrency(totalAmount || 0)}</p>
+            <div className="flex items-center justify-between bg-gray p-[10px]">
+              <h5 className="forum text-lg font-black">Total:</h5>
+              <p className="forum text-lg font-black">{formatCurrency(totalAmount || 0)}</p>
             </div>
 
             <div className="flex items-center justify-around gap-[10px] p-[10px]">
               <button
-                className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full transform transition duration-300 hover:scale-105"
+                className="bg-primary text-white px-8 py-2 font-bold focus:outline-none forum rounded-full transform transition duration-300 hover:scale-105"
                 onClick={handleOrder}
               >
                 Order Now
               </button>
               <button
                 onClick={() => dispatch(clearCart())}
-                className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full transform transition duration-300 hover:scale-105"
+                className="bg-primary text-white px-8 py-2 font-bold focus:outline-none forum rounded-full transform transition duration-300 hover:scale-105"
               >
                 Clear Cart
               </button>
@@ -76,7 +77,7 @@ function Cart({ showCart, setShowCart }) {
 
       {/* Overlay */}
       <div
-        className={`fixed left-0 top-[60px] z-20 ${
+        className={`fixed left-0 top-[88px] z-20 ${
           showCart ? "h-full" : "h-0"
         } w-full bg-[#00000080]`}
         onClick={() => setShowCart(false)}

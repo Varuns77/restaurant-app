@@ -10,6 +10,8 @@ import "swiper/css/pagination"; // Import Swiper pagination styles
 
 import { Pagination } from "swiper/modules";
 import MenuItem from "../Menu/menuItem";
+import Drinks from "../Menu/Drinks";
+import Footer from "../Footer/Footer";
 import useFetch from "../../hooks/useFetch";
 
 const Menu = () => {
@@ -21,44 +23,10 @@ const Menu = () => {
 
   return (
     <>
-      {/* <main className=" h-screen ">
-        <div className="max-w-screen-xl pt-16 mx-auto px-6"> */}
-      {/* <Swiper
-            spaceBetween={50}
-            slidesPerView={3}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-          </Swiper> */}
-      {/* <Swiper
-        spaceBetween={30}
-        grabCursor:true
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper> */}
-      {/* </div> */}
-      {/* </main> */}
-      <section className="py-20 mx-auto p-[4.5rem_2rem] lg:p-[4.5rem_5rem] bg-gray-100" >
+      <section className="py-20 mx-auto p-[4.5rem_2rem] lg:p-[4.5rem_5rem] forum bg-gray-100" id="menu">
         <div className="text-center mb-12">
-          <span className="text-2xl text-[#cd9452]">our menu</span>
-          <h3 className="text-4xl text-black">our popular dishes</h3>
+          <span className="text-4xl font-bold sub-heading">our menu</span>
+          <h3 className="text-5xl main-heading mt-2">Experience Our Gourmet Collection</h3>
         </div>
 
         {/* Initialize Swiper */}
@@ -74,10 +42,10 @@ const Menu = () => {
         >
           {/* Breakfast Slide */}
           <SwiperSlide>
-            <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-4 text-center">
+            <h3 className="title p-4 text-4xl font-bold text-white bg-[#655DBB] mb-4 text-center">
               Breakfast
             </h3>
-            <div className="flex items-center justify-center space-x-6 mb-4">
+            <div className="flex items-center justify-center font-semibold space-x-6 mb-4">
               <MenuCategory
                 selectedCuisine={cuisineType}
                 onCuisineSelect={handleCuisineType}
@@ -90,7 +58,7 @@ const Menu = () => {
 
           {/* Lunch Slide */}
           <SwiperSlide className="swiper-slide slide">
-            <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-4 text-center">
+            <h3 className="title p-4 text-4xl font-bold text-white bg-[#655DBB] mb-4 text-center">
               Lunch
             </h3>
             <div className="flex items-center justify-center space-x-6 mb-4">
@@ -106,7 +74,7 @@ const Menu = () => {
 
           {/* Dinner Slide */}
           <SwiperSlide className="swiper-slide slide">
-            <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-4 text-center">
+            <h3 className="title p-4 text-4xl font-bold text-white bg-[#655DBB] mb-4 text-center">
               Dinner
             </h3>
             <div className="flex items-center justify-center space-x-6 mb-4">
@@ -120,62 +88,9 @@ const Menu = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <Drinks drinkType="Beverage" />
-
-        {/* Dinner Slide */}
-        {/* <SwiperSlide className="swiper-slide slide">
-          <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-12 text-center">dinner</h3>
-          <div className="box-container flex flex-wrap gap-8 pb-16">
-            {[...Array(6)].map((_, index) => (
-              <div key={index} className="box flex items-center justify-between bg-white p-8 shadow-lg border border-gray-300 flex-1 min-w-[41rem] transition-transform duration-300 hover:scale-95 cursor-pointer">
-                <div className="info">
-                  <h3 className="text-2xl text-black pb-2">dinner</h3>
-                  <p className="text-base text-gray-600 leading-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptatibus!
-                  </p>
-                </div>
-                <div className="price text-2xl text-[#cd9452]">$59.99</div>
-              </div>
-            ))}
-          </div>
-        </SwiperSlide> */}
-
-        {/* Drinks Slide */}
-        {/* <SwiperSlide className="swiper-slide slide">
-          <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-12 text-center">drinks</h3>
-          <div className="box-container flex flex-wrap gap-8 pb-16">
-            {[...Array(6)].map((_, index) => (
-              <div key={index} className="box flex items-center justify-between bg-white p-8 shadow-lg border border-gray-300 flex-1 min-w-[41rem] transition-transform duration-300 hover:scale-95 cursor-pointer">
-                <div className="info">
-                  <h3 className="text-2xl text-black pb-2">drinks</h3>
-                  <p className="text-base text-gray-600 leading-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptatibus!
-                  </p>
-                </div>
-                <div className="price text-2xl text-[#cd9452]">$59.99</div>
-              </div>
-            ))}
-          </div>
-        </SwiperSlide> */}
-
-        {/* Dessert Slide */}
-        {/* <SwiperSlide className="swiper-slide slide">
-          <h3 className="title p-4 text-3xl text-white bg-[#cd9452] mb-12 text-center">dessert</h3>
-          <div className="box-container flex flex-wrap gap-8 pb-16">
-            {[...Array(6)].map((_, index) => (
-              <div key={index} className="box flex items-center justify-between bg-white p-8 shadow-lg border border-gray-300 flex-1 min-w-[41rem] transition-transform duration-300 hover:scale-95 cursor-pointer">
-                <div className="info">
-                  <h3 className="text-2xl text-black pb-2">dessert</h3>
-                  <p className="text-base text-gray-600 leading-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptatibus!
-                  </p>
-                </div>
-                <div className="price text-2xl text-[#cd9452]">$59.99</div>
-              </div>
-            ))}
-          </div>
-        </SwiperSlide> */}
+        <Drinks drinkType="Beverage"/>
       </section>
+      <Footer />
     </>
   );
 };

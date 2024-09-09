@@ -51,11 +51,11 @@ const DeliveryForm = () => {
 
 	return (
 		<div className="flex flex-col mt-10">
-			<h1 className="text-2xl  poppins pb-2 border-b border-gray-500 text-red-700">
-				Edit Delivery Details
+			<h1 className="text-2xl forum font-bold pb-2 border-b border-gray-500 text-red-700">
+				Delivery Details
 			</h1>
 			<form className="my-4" onSubmit={handleSubmit}>
-				<div className="flex flex-col space-y-3">
+				<div className="flex flex-col space-y-3 forum font-bold text-md">
 				<TextField
 						type="text"
 						placeholder="Delivery to"
@@ -115,7 +115,7 @@ const DeliveryForm = () => {
 						onChange={handleChange}
 						required
 					/>
-					<button className="w-full px-6 py-3 rounded-lg bg-primary text-white poppins ring-red-300 focus:ring-4 transition duration-500">
+					<button className="w-full px-6 py-3 rounded-lg bg-primary text-white forum transition duration-500">
 						Save & Continue
 					</button>
 				</div>
