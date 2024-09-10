@@ -40,7 +40,7 @@ const AboutUs = () => {
             Welcome to{" "}
             <span className="lobster-regular">Seven Spoons Restaurant</span>
           </h1>
-          <p className="text-lg text-gray-700 py-4 leading-relaxed">
+          <p className="text-lg font-normal py-4 leading-relaxed">
             Welcome to Seven Spoons Restaurant, where culinary delights from
             around the world come together. Whether you're craving authentic
             Italian, flavorful Indian, classic American, or exotic Greek dishes,

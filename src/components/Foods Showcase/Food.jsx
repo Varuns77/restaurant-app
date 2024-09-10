@@ -58,7 +58,7 @@ const Foods = () => {
 
   return (
     <ScrollReveal>
-      <section className="flex justify-center items-center mr-8 bg-gray-100">
+      <section className="flex justify-center items-center mr-8 bg-gray-100 w-full">
         <div className="flex justify-center xl:flex-row lg:flex-row md:flex-col sm:flex-col">
           <div className="flex flex-col w-full">
             <div className="flex flex-col items-center justify-center mt-12">
