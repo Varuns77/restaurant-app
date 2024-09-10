@@ -4,7 +4,7 @@ import { BsCart2 } from "react-icons/bs";
 import { useNavigate, useParams } from "react-router-dom"; // Updated import
 import swal from "sweetalert";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem } from "../components/Redux/AddToCart/cartSlice";
+import { addItem } from "../Redux/AddToCart/cartSlice";
 import useFetch from "../hooks/useFetch";
 import Back from "../routes/Back";
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineDelete } from 'react-icons/ai';
 import { useDispatch } from 'react-redux';
-import { removeItem } from '../Redux/AddToCart/cartSlice'; // Import the action to clear orders
+import { removeItem } from '../../Redux/AddToCart/cartSlice'; // Import the action to clear orders
 
 const OrderCard = (props) => {
     // const copyObj = {...props}

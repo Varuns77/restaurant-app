@@ -1,7 +1,7 @@
 import { MdClose } from "react-icons/md";
 import { formatCurrency } from "../../utils/helpers";
 import { useDispatch, useSelector } from "react-redux";
-import { clearCart } from "../Redux/AddToCart/cartSlice";
+import { clearCart } from "../../Redux/AddToCart/cartSlice";
 import CartItem from "./CartItem";
 import EmptyCart from "./EmptyCart";
 import { useNavigate } from "react-router-dom"; 

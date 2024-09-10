@@ -5,7 +5,7 @@ import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 //   increaseItemQuantity,
 // } from "../../redux/features/cartSlice";
 
-import { addItem, removeItem } from "../Redux/AddToCart/cartSlice";
+import { addItem, removeItem } from "../../Redux/AddToCart/cartSlice";
 
 function UpdateItemQuantity({ item }) {
   // const { image, title, quantity, id, price } = item;

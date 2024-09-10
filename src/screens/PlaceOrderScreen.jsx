@@ -7,7 +7,7 @@ import OrderPrice from "../components/PlaceOrder/OrderPrice";
 import { useDelivery } from "../contexts/DeliveryProvider";
 import Back from "../routes/Back";
 import { useSelector, useDispatch } from "react-redux";
-import { clearCart } from "../components/Redux/AddToCart/cartSlice"; // Import the action to clear orders
+import { clearCart } from "../Redux/AddToCart/cartSlice"; // Import the action to clear orders
 import { db } from "../config/firebase";
 import { updateDoc, doc, arrayUnion } from "firebase/firestore"; // Import Firestore functions
 import { getAuth } from "firebase/auth"; // Import Firebase auth to get current user
