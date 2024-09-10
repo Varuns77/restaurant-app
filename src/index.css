@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 } */
 
 .header-banner {
-  background-image: url('../assets/2147740755.jpg');
+  background-image: url("public/assets/pexels-ella-olsson-572949-1640773.jpg");
   height: 700px !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,20 +35,20 @@ body::-webkit-scrollbar-thumb {
   
 }
 .banner {
-  background-image: url('../assets/2147740755.jpg');
+  background-image: url("public/assets/pexels-ella-olsson-572949-1640773.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-.poppins {
-  font-family: 'Poppins', sans-serif;
+.forum {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .bg-primary {
   background: #655DBB;
 }
-.bg-primary-dark {
-  background: #ce193c;
-}
+
 .text-primary {
   color: black;
 }
