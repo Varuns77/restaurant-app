@@ -5,7 +5,7 @@ import useAuth from '../hooks/useAuth';
 const PublicRoute = () => {
     const { user } = useAuth();
 
-    if (user.displayName) {
+    if (user?.displayName) {
         return <Navigate to="/" replace />;
     }
 

@@ -13,6 +13,7 @@ import MenuItem from "../Menu/menuItem";
 import Drinks from "../Menu/Drinks";
 import Footer from "../Footer/Footer";
 import useFetch from "../../hooks/useFetch";
+import MenuCategory from "./MenuCategory";
 
 const Menu = () => {
   const [cuisineType, setCuisineType] = useState("All"); // New state for cuisine type

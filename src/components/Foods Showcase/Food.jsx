@@ -77,10 +77,10 @@ const Foods = () => {
             </div>
             <div className="mt-7 mb-10 flex items-center gap-2 justify-center">
               <span
-                className="text-center text-xl forum font-bold cursor-pointer"
+                className="text-center text-xl forum font-bold cursor-pointer hover:underline"
                 onClick={() => navigate("/orderedItems")}
               >
-                <u>Explore All Foods</u>
+                Explore All Foods
               </span>
               <div className="w-4">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

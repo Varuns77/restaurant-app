@@ -14,12 +14,25 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import useFetch from "../../hooks/useFetch";
+import { useNavigate } from "react-router-dom";
 
 // import './Slider.css';
 
 const AboutUs = () => {
 
   const [foods] = useFetch();
+  const [title, setTitle] = useState('');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (title) {  
+      navigate(`/foods/${title}`);  
+    }
+  }, [title]);  
+
+  const handleRoute = (foodTitle) => {
+    setTitle(foodTitle); 
+};
 
   return (
     <>
@@ -27,7 +40,7 @@ const AboutUs = () => {
         className="bg-gray-100 animate-fadeIn flex flex-wrap lg:flex-row items-center gap-8 px-16 py-16 forum font-semibold"
         id="about"
       >
-        <div className="image flex-1 min-w-[16rem]">
+        <div className="flex-1 min-w-[16rem] lg:flex-1 md:flex-1">
           <img
             src="public/assets/AboutUs/restaurant-private-room-with-blue-chairs-white-walls-fireplace-wide-window.jpg"
             alt="About"
@@ -35,7 +48,7 @@ const AboutUs = () => {
           />
         </div>
 
-        <div className="content flex-1 min-w-[16rem]">
+        <div className="min-w-[16rem] lg:flex-1">
           <h1 className="text-4xl text-black">
             Welcome to{" "}
             <span className="lobster-regular">Seven Spoons Restaurant</span>
@@ -56,7 +69,7 @@ const AboutUs = () => {
             Explore
           </button>
 
-          <div className="icons-container flex flex-wrap gap-8 mt-12 ">
+          <div className="flex flex-wrap gap-8 mt-12 ">
             <div className="flex-1 min-w-[12rem] text-center bg-white p-7 rounded">
               <img
                 src="./assets/AboutUs/recommended-food.png"
@@ -136,7 +149,8 @@ const AboutUs = () => {
             <SwiperSlide key={index}>
               {" "}
               {/* Unique key prop */}
-              <div className="slide-content flex items-center justify-center h-64 mb-12 mt-2 bg-white hover:shadow-md hover:scale-105">
+              <div className="slide-content flex items-center justify-center h-64 mb-12 mt-2 bg-white hover:shadow-md hover:scale-105 hover:cursor-pointer"
+                onClick={() => handleRoute(item.title)}>
                 <div>
                   <img
                     className="w-56 lg:w-64 md:w-60"

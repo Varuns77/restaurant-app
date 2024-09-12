@@ -41,7 +41,7 @@ const Navbar = () => {
                 {/* Middle */}
                 <div className="flex gap-2">
                     <p className='forum text-lg font-bold'>Home</p>
-                    <p className='forum text-lg font-bold' onClick={() => navigate('/orderedItems')}>Order</p>
+                    <p className='forum text-lg font-bold' onClick={() => navigate('/menu')}>Order</p>
                 </div>
 
                 {/* Right  */}
