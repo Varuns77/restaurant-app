@@ -14,6 +14,7 @@ import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import SignInScreen from "./screens/SignInScreen";
 import SignUpScreen from "./screens/SignUpScreen";
 import Menu from "./components/Menu/Menu";
+import OrderedItems from "./screens/OrderedItems";
 
 const App = () => {
     return (
@@ -32,6 +33,7 @@ const App = () => {
                                 <Route path="/foods/:title" element={<FoodDetailScreen />} />
                                 <Route path="/orders" element={<PlaceOrderScreen />} />
                                 <Route path="/menu" element={<Menu />} />
+                                <Route path="/orderedItems" element={<OrderedItems />} />
                                 <Route path="/order-successful" element={<OrderSuccessfulScreen />} />
                             </Route>
                             <Route path="*" element={<ErrorScreen />} />

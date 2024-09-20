@@ -61,6 +61,7 @@ const Navbar = () => {
             </span>
             <BsCart2 className="cursor-pointer w-6 h-6 text-gray-700" />
           </div>
+          <Cart showCart={showCart} setShowCart={setShowCart} />
 
           {/* Hamburger Menu */}
           <button
@@ -87,36 +88,42 @@ const Navbar = () => {
           >
             Menu
           </p>
-          <p className="forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]">
+          <p
+            className="forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
+            onClick={() => navigate("/orderedItems")}
+          >
             Order
           </p>
         </div>
 
         {/* User Section for Desktop */}
         {user?.displayName ? (
-          <div className="items-center justify-end space-x-4 !hidden md:!flex">
-            <div
-              className="relative flex cursor-pointer"
-              onClick={toggleShowCart}
-            >
-              <span className="bg-primary w-6 h-6 rounded-full flex items-center justify-center text-white forum font-bold absolute -right-2 -top-2">
-                {order.length}
-              </span>
-              <BsCart2 className="cursor-pointer w-6 h-6 text-gray-700" />
+          <>
+            <div className="items-center justify-end space-x-4 !hidden md:!flex">
+              <div
+                className="relative flex cursor-pointer"
+                onClick={toggleShowCart}
+              >
+                <span className="bg-primary w-6 h-6 rounded-full flex items-center justify-center text-white forum font-bold absolute -right-2 -top-2">
+                  {order.length}
+                </span>
+                <BsCart2 className="cursor-pointer w-6 h-6 text-gray-700" />
+              </div>
+              <img
+                src={user.photoURL}
+                alt={user.displayName}
+                className="w-10 h-10 rounded-full border-black"
+              />
+              <p className="text-gray-700 forum hidden md:block lg:block">
+                {user.displayName}
+              </p>
+              <FiLogOut
+                className="cursor-pointer w-6 h-6 text-gray-700"
+                onClick={signOutUser}
+              />
             </div>
-            <img
-              src={user.photoURL}
-              alt={user.displayName}
-              className="w-10 h-10 rounded-full border-black"
-            />
-            <p className="text-gray-700 forum hidden md:block lg:block">
-              {user.displayName}
-            </p>
-            <FiLogOut
-              className="cursor-pointer w-6 h-6 text-gray-700"
-              onClick={signOutUser}
-            />
-          </div>
+            <Cart showCart={showCart} setShowCart={setShowCart} />
+          </>
         ) : (
           <div className="flex items-center justify-end space-x-6">
             <button className="forum" onClick={() => navigate("/signin")}>
@@ -146,22 +153,28 @@ const Navbar = () => {
           </button>
           <li
             className="flex justify-center w-full py-4 forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
-            onClick={() => { navigate("/")
-              setMenuOpen(false)}}
+            onClick={() => {
+              navigate("/");
+              setMenuOpen(false);
+            }}
           >
             Home
           </li>
           <li
             className="flex justify-center w-full py-4 forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
-            onClick={() => { navigate("/menu")
-              setMenuOpen(false)}
-            }
+            onClick={() => {
+              navigate("/menu");
+              setMenuOpen(false);
+            }}
           >
             Menu
           </li>
           <li
             className="flex justify-center w-full py-4 forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
-            //  onClick={() => navigate("/")}
+            onClick={() => {
+              navigate("/orderedItems");
+              setMenuOpen(false);
+            }}
           >
             Order
           </li>
