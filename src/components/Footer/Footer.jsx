@@ -1,13 +1,11 @@
 import React from "react";
-import BottomFooter from "./BottomFooter";
 import MainFooter from "./MainFooter";
 
 const Footer = () => {
 	return (
-		<footer className="bg-gray-800 px-6 py-12">
+		<footer className="bg-gray-950 px-6 pt-8 pb-2">
 			<div className=" max-w-screen-xl mx-auto px-6">
 				<MainFooter />
-				<BottomFooter />
 			</div>
 		</footer>
 	);

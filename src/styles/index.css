@@ -93,3 +93,14 @@ body::-webkit-scrollbar-thumb {
   font-family: "Lobster", sans-serif;
 }
 
+
+.hidden {
+  display: none !important; /* For small screens */
+}
+
+
+@media (min-width: 768px) {
+  .hidden.md\\:block {
+    display: block !important; /* Force the display for larger screens */
+  }
+}
