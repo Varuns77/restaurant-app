@@ -60,8 +60,8 @@ const PlaceOrderScreen = () => {
   };
 
   return (
-    <main className=" h-screen banner">
-      <div className="max-w-screen-xl pt-16 mx-auto px-6">
+    <main className=" h-screen bg-gray-100">
+      <div className="max-w-screen-xl pt-16 mx-auto px-6 bg-gray-100">
         <Back />
         {order.length > 0 ? (
           <>
@@ -71,8 +71,8 @@ const PlaceOrderScreen = () => {
                 <DeliveryForm />
               </div>
               {/* right side  */}
-              <div className="col-span-1">
-                <div className="glass p-6 box-border rounded-lg">
+              <div className="col-span-1 ">
+                <div className="glass p-6 box-border border border-gray-300 rounded-lg">
                   {/* orders  */}
                   <div className="flex flex-col space-y-3 h-64 overflow-y-scroll orderContainer ">
                     {order.map((item) => (
