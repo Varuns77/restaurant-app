@@ -74,31 +74,30 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Desktop Menu */}
-        <div className="gap-2 !hidden md:!flex">
-          <p
-            className="forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
-            onClick={() => navigate("/")}
-          >
-            Home
-          </p>
-          <p
-            className="forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
-            onClick={() => navigate("/menu")}
-          >
-            Menu
-          </p>
-          <p
-            className="forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
-            onClick={() => navigate("/orderedItems")}
-          >
-            Order
-          </p>
-        </div>
-
         {/* User Section for Desktop */}
         {user?.displayName ? (
           <>
+            {/* Desktop Menu */}
+            <div className="gap-2 !hidden md:!flex">
+              <p
+                className="forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
+                onClick={() => navigate("/")}
+              >
+                Home
+              </p>
+              <p
+                className="forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
+                onClick={() => navigate("/menu")}
+              >
+                Menu
+              </p>
+              <p
+                className="forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
+                onClick={() => navigate("/orderedItems")}
+              >
+                Order
+              </p>
+            </div>
             <div className="items-center justify-end space-x-4 !hidden md:!flex">
               <div
                 className="relative flex cursor-pointer"
@@ -126,11 +125,11 @@ const Navbar = () => {
           </>
         ) : (
           <div className="flex items-center justify-end space-x-6">
-            <button className="forum" onClick={() => navigate("/signin")}>
+            <button className="forum font-bold" onClick={() => navigate("/signin")}>
               Sign In
             </button>
             <button
-              className="bg-primary px-6 py-3 text-white forum rounded-full ring-red-300 focus:outline-none focus:ring-4 transform transition duration-700 hover:scale-105"
+              className="bg-primary px-6 py-3 text-white forum font-bold rounded-full focus:outline-none focus:ring-4 transform transition duration-700 hover:scale-105"
               onClick={() => navigate("/signup")}
             >
               Sign Up

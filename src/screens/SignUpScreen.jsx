@@ -48,9 +48,9 @@ const SignUpScreen = () => {
         <main className="h-screen w-full banner">
             <div className="flex flex-col justify-center items-center h-screen">
                 {/* logo  */}
-                <Brand />
+                {/* <Brand /> */}
                 {/* sign up form  */}
-                <form className="bg-white w-96 mt-6 p-4 rounded-lg shadow-lg" onSubmit={handleSubmit}>
+                <form className="bg-white w-96 mt-10 p-4 rounded-lg shadow-lg" onSubmit={handleSubmit}>
                     <div className="flex flex-col space-y-6 forum font-bold">
                         {Inputs.map(input => (
                             <TextField
