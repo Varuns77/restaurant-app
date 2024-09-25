@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { getDoc, doc } from "firebase/firestore";
-import { db } from "../../config/firebase";
-import { getAuth } from "firebase/auth";
-import Back from "../../routes/Back";
-// import { Food } from "../assets/MediumData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import Swiper styles
 import "swiper/css/pagination"; // Import Swiper pagination styles
 
 import { Pagination } from "swiper/modules";
-import MenuItem from "../Menu/menuItem";
+import MenuItem from "../Menu/MenuItem";
 import Drinks from "../Menu/Drinks";
 import Footer from "../Footer/Footer";
-import useFetch from "../../hooks/useFetch";
 import MenuCategory from "./MenuCategory";
 
 const Menu = () => {
