@@ -50,7 +50,7 @@ const SignInScreen = () => {
     <main className="h-screen w-full banner">
       <div className="flex flex-col justify-center items-center h-screen">
         {/* logo  */}
-        <div className="backdrop-blur-sm rounded-md">
+        <div className="w-40 mt-3 backdrop-blur-sm rounded-md">
           <Brand />
         </div>
         {/* sign up form  */}

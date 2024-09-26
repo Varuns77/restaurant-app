@@ -15,6 +15,9 @@ const Navbar = () => {
   const [showCart, setShowCart] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  console.log(user);
+  
+
   const toggleShowCart = () => {
     setShowCart((prev) => !prev);
   };
@@ -49,30 +52,7 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Right Section for Cart and Menu */}
-        <div className="flex items-center space-x-6 md:hidden">
-          {/* Cart Icon */}
-          <div
-            className="relative flex cursor-pointer"
-            onClick={toggleShowCart}
-          >
-            <span className="bg-primary w-6 h-6 rounded-full flex items-center justify-center text-white forum font-bold absolute -right-2 -top-2">
-              {order.length}
-            </span>
-            <BsCart2 className="cursor-pointer w-6 h-6 text-gray-700" />
-          </div>
-          <Cart showCart={showCart} setShowCart={setShowCart} />
-
-          {/* Hamburger Menu */}
-          <button
-            className="space-y-1 md:hidden"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <div className="w-6 h-1 bg-black rounded-sm"></div>
-            <div className="w-6 h-1 bg-black rounded-sm"></div>
-            <div className="w-6 h-1 bg-black rounded-sm"></div>
-          </button>
-        </div>
+        
 
         {/* User Section for Desktop */}
         {user?.displayName ? (
@@ -122,6 +102,31 @@ const Navbar = () => {
               />
             </div>
             <Cart showCart={showCart} setShowCart={setShowCart} />
+
+            {/* Right Section for Cart and Menu */}
+        <div className="flex items-center space-x-6 md:hidden">
+          {/* Cart Icon */}
+          <div
+            className="relative flex cursor-pointer"
+            onClick={toggleShowCart}
+          >
+            <span className="bg-primary w-6 h-6 rounded-full flex items-center justify-center text-white forum font-bold absolute -right-2 -top-2">
+              {order.length}
+            </span>
+            <BsCart2 className="cursor-pointer w-6 h-6 text-gray-700" />
+          </div>
+          <Cart showCart={showCart} setShowCart={setShowCart} />
+
+          {/* Hamburger Menu */}
+          <button
+            className="space-y-1 md:hidden"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <div className="w-6 h-1 bg-black rounded-sm"></div>
+            <div className="w-6 h-1 bg-black rounded-sm"></div>
+            <div className="w-6 h-1 bg-black rounded-sm"></div>
+          </button>
+        </div>
           </>
         ) : (
           <div className="flex items-center justify-end space-x-6">
@@ -179,7 +184,10 @@ const Navbar = () => {
           </li>
           <li
             className="flex justify-center w-full py-4 forum text-lg font-bold hover:cursor-pointer hover:text-[#93c5fd]"
-            onClick={signOutUser}
+            onClick={() => {
+              signOutUser();
+              setMenuOpen(false);
+            }}
           >
             Logout
           </li>

@@ -19,7 +19,7 @@ const Drinks = ({ drinkType }) => {
       <div className="w-full h-full">
         <div className="flex flex-col items-center justify-center mt-8">
           <span className="sub-heading font-bold">drinks</span>
-          <span className="main-heading font-bold mb-6">
+          <span className="main-heading font-bold mb-6 text-center">
             Cheers to Choice: Discover Our Drink Menu
           </span>
         </div>
