@@ -42,7 +42,7 @@ const AboutUs = () => {
       >
         <div className="flex-1 min-w-[16rem] lg:flex-1 md:flex-1">
           <img
-            src="public/assets/AboutUs/restaurant-private-room-with-blue-chairs-white-walls-fireplace-wide-window.jpg"
+            src="./assets/AboutUs/restaurant-private-room-with-blue-chairs-white-walls-fireplace-wide-window.jpg"
             alt="About"
             className="w-full lg:h-[30rem]"
           />
