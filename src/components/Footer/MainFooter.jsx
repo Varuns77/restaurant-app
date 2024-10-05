@@ -15,7 +15,7 @@ const MainFooter = () => {
   ];
   return (
     <>
-      <div className="flex items-center forum font-bold">
+      <div className="flex flex-col items-center md:items-center md:flex-row forum font-bold my-5">
         {/* logo  */}
         <div className="flex flex-grow">
           <Brand />
@@ -31,13 +31,6 @@ const MainFooter = () => {
           </div>
           <div className="flex flex-col space-y-2">
             {FooterLinks.slice(4, 8).map((item) => (
-              <span className="text-white" key={item.id}>
-                {item.text}
-              </span>
-            ))}
-          </div>
-          <div className="flex flex-col space-y-2">
-            {FooterLinks.slice(8, 12).map((item) => (
               <span className="text-white" key={item.id}>
                 {item.text}
               </span>
