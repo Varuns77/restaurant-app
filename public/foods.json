@@ -17,7 +17,7 @@
     "image": "./assets/Breakfast/breakfast2.png",
     "type": "Breakfast",
     "preferencetype": "veg",
-    "cuisinetype": "Indian"
+    "cuisinetype": "American"
   },
   {
     "id": 3,
@@ -25,7 +25,7 @@
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 10.99,
     "image": "./assets/Breakfast/breakfast3.png",
-    "type": "Breakfast",
+    "type": "Lunch",
     "preferencetype": "non-veg",
     "cuisinetype": "American"
   },
@@ -238,6 +238,26 @@
     "type": "Beverage",
     "preferencetype": "Drink",
     "cuisinetype": "Beverage"
+  },
+  {
+    "id": 25,
+    "title": "Masala Dosa",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 6.99,
+    "image": "./assets/Breakfast/MasalaDosa.png",
+    "type": "Breakfast",
+    "preferencetype": "veg",
+    "cuisinetype": "Indian"
+  },
+  {
+    "id": 26,
+    "title": "Aloo Parantha",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 6.99,
+    "image": "./assets/Breakfast/AlooParantha.png",
+    "type": "Breakfast",
+    "preferencetype": "veg",
+    "cuisinetype": "Indian"
   }
 ]
 

@@ -78,7 +78,7 @@ const Foods = () => {
             <div className="mt-7 mb-10 flex items-center gap-2 justify-center">
               <span
                 className="text-center text-xl forum font-bold cursor-pointer hover:underline"
-                onClick={() => navigate("/orderedItems")}
+                onClick={() => navigate("/menu")}
               >
                 Explore All Foods
               </span>
