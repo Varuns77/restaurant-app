@@ -258,6 +258,36 @@
     "type": "Breakfast",
     "preferencetype": "veg",
     "cuisinetype": "Indian"
+  },
+  {
+    "id": 27,
+    "title": "Chocolate with Churros",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 4.99,
+    "image": "./assets/Breakfast/ChocolatewithChurros.png",
+    "type": "Breakfast",
+    "preferencetype": "veg",
+    "cuisinetype": "Spanish"
+  },
+  {
+    "id": 28,
+    "title": "Tortilla De Patatas",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 7.99,
+    "image": "./assets/Breakfast/TortillaDePatatas.png",
+    "type": "Breakfast",
+    "preferencetype": "non-veg",
+    "cuisinetype": "Spanish"
+  },
+  {
+    "id": 29,
+    "title": "Burrito Wrap",
+    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "price": 5.99,
+    "image": "./assets/Breakfast/BurritoWrap.png",
+    "type": "Breakfast",
+    "preferencetype": "veg",
+    "cuisinetype": "Mexican"
   }
 ]
 
